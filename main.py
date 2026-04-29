@@ -36,8 +36,8 @@ while True:
         case "3":
             if user == "admin":
                 print("\n Todos os usuários e suas senhas: \n")
-                for i in users.users:
-                    print(f"{i}: {users.users[i]["passw"]}")
+                for i in users:
+                    print(f"{i}: {users[i]["passw"]}")
             else:
                 quit()
 
