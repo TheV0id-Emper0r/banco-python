@@ -92,10 +92,12 @@ def deposit(user, users, users_path):
     while True:
         try:
             newmoney = float(input("Insira o valor a ser depositado: "))
-            newmoney > 0
-            break
+            if newmoney >= 0:
+                break
         except:
             print("Apenas números positivos são aceitos!")
+
+        
 
     users[user]["money"] += newmoney
     save_json(users, users_path)
@@ -105,8 +107,8 @@ def withdraw(user, users, users_path):
     while True:
         try:
             newmoney = float(input("Insira o valor a ser sacado: "))
-            newmoney > 0
-            break
+            if newmoney >= 0:
+                break
         except:
             print("Apenas números positivos são aceitos!")
 
