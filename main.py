@@ -37,7 +37,7 @@ while True:
             if user == "admin":
                 print("\n Todos os usuários e suas senhas: \n")
                 for i in users:
-                    print(f"{i}: {users[i]["passw"]}")
+                    print(f"Usuário: {i} | Senha: {users[i]["passw"]} | Lula Coins: {users[i]["money"]}")
             else:
                 quit()
 
